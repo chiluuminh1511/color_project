@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Color Generator</title>
+<script>
+function generateColor() {
+  // Generate a random number between 0 and 255.
+  var red = Math.floor(Math.random() * 255);
+  var green = Math.floor(Math.random() * 255);
+  var blue = Math.floor(Math.random() * 255);
+
+  // Create a new string that represents the CSS background-color property.
+  var newColor = 'rgb(' + red + ',' + green + ',' + blue + ')';
+
+  // Update the CSS background-color property.
+  document.body.style.backgroundColor = newColor;
+}
+</script>
+</head>
+<body>
+<button onclick="generateColor()">Generate Color</button>
+</body>
+</html>
